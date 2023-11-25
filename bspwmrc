@@ -1,0 +1,20 @@
+#!/bin/bash
+
+xsetroot -cursor_name left_ptr
+sxhkd &
+feh --bg-scale ~/4647677-106759176.jpe &
+setxkbmap fr &
+polybar left &
+polybar right &
+polybar center &
+
+bspc config border_width	2
+bspc config border_radius	5
+bspc config window_gap		30
+
+bspc config split-ratio		0.6
+bspc config focus_follows_pointer	true
+bspc config pointer_modifier	mod1
+
+bspc config automatic_scheme	spiral
+bspc monitor -d 1 2 3
